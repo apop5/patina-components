@@ -1,0 +1,25 @@
+[package]
+name = "patina_ipmi"
+description = "Platform-configured local IPMI transports and services for Patina"
+version.workspace = true
+license.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+
+[dependencies]
+patina.workspace = true
+log = { version = "0.4", default-features = false }
+spin = { version = "0.12", default-features = false, features = ["mutex", "spin_mutex"] }
+
+[features]
+ci_features = []
+doc = []
+std = ["patina/std"]
+test-runner = []
+
+[lints]
+workspace = true
+
+[dev-dependencies]
+patina = { workspace = true, features = ["mockall"] }

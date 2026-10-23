@@ -19,6 +19,12 @@ components, etc. better reflect how components will be maintained outside the pa
 
 Based on this evaluation, other components might move to this repository in the future.
 
+## Components
+
+| Crate | Description |
+|-------|-------------|
+| [patina_ipmi](ipmi/README.md) | Platform-configured local IPMI transports, Rust service, and EDK II protocol compatibility |
+
 ## Resources
 
 - [Patina](https://github.com/OpenDevicePartnership/patina)
